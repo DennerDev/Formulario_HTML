@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com validação</title>
+
+    <!---Boostrap  5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--My Style -->
+    <link rel="stylesheet" href="./Asset/Style/style.css">
+    <script defer src="./Asset/JS/main.js"></script>
+
+</head>
+<body>
+
+    <div class="login">
+
+    <h2 class="text-center">Tela de Login</h2>
+
+    <form action="" class="form-group was-validated">
+       <div class="form-group">
+        <label class="form-label" for="email">Digite o seu E-mail</label>
+        <input class="form-control" type="email" id="email" required>
+
+        <div class="invalid-feedback">
+            Entre com seu E-mail
+        </div>
+
+       </div>
+
+       <div class="form-group was-validated">
+        <label class="form-label" for="password">Digite o seu senha</label>
+        <input class="form-control" type="password" id="password" required>
+
+        <div class="invalid-feedback">
+            Entre com seu senha
+        </div>
+
+       </div>
+        
+
+       <div class="form-group form-check">
+        <input class="form-check-input" type="checkbox" id="check">
+        <label class="form-check-label" for="check">Lembrar a minha a senha</label>
+       </div>
+
+       <input class="btn btn-success w-100" type="submit" value="Logar">
+    </form>
+
+   </div>
+    
+</body>
+</html>
